@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #d3f7f7, #87ceeb); /* Fondo verde agua */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.scanner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.video-container {
+    margin-bottom: 20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end; /* Alinear a la derecha */
+    margin-bottom: 10px;
+}
+
+#scanButton, #clearButton {
+    padding: 12px 24px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold; /* Letras gruesas */
+    margin: 0 10px; /* Espacio entre los botones */
+    background-image: linear-gradient(to right, #4d6fa0, #a07fb7); /* Gradiente azul a lila */
+    color: #ffffff; /* Letras blancas */
+}
+
+#scanButton:hover, #clearButton:hover {
+    opacity: 0.8; /* Opacidad al pasar el mouse */
+}
+
+.result-container {
+    width: 100%;
+    padding: 10px;
+    min-height: 100px;
+    max-height: 300px;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+.result-item {
+    margin-bottom: 20px; /* Doble espacio entre cada registro */
+    font-size: 18px; /* Tamaño de letra aumentado */
+}
+
+.timestamp {
+    font-size: 20px; /* Tamaño de la hora aumentado */
+    color: #000080; /* Azul marino más oscuro */
+    margin-right: 10px; /* Espacio entre la hora y el número */
+}
+
+.scan-number {
+    color: red; /* Color rojo para el número de veces escaneado */
+}
+
+.bold {
+    font-weight: bold; /* Letras gruesas */
+    font-size: 28px; /* Tamaño de letra aumentado para el slogan */
+    color: #000080; /* Color azul marino */
+}
+
+.italic {
+    font-style: italic; /* Texto en cursiva */
+}
+
+.larger {
+    font-size: 32px; /* Tamaño más grande para el slogan */
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asamblea Regional 2024</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="slogan"><span class="bold italic larger">¡Prediquemos las buenas noticias!</span></div>
+        <div id="title"><span class="bold larger">Asamblea Regional 2024</span></div>
+        <div class="scanner-container">
+            <div class="video-container">
+                <video id="video" width="300" height="200" style="border: 1px solid black"></video>
+            </div>
+            <div class="button-container">
+                <button id="scanButton">Escanear</button>
+                <button id="clearButton">Limpiar</button>
+            </div>
+        </div>
+        <div class="result-container" id="result">
+            <!-- Aquí se insertarán dinámicamente los resultados -->
+        </div>
+    </div>
+    <script src="https://unpkg.com/@zxing/library@latest"></script>
+    <script src="script.js"></script>
+</body>
+</html>
